@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy2ww4pgorbrc"
-path="res://.godot/imported/Logo red trans.png-3370e2c88ae05d76923ffdc9997c4d86.ctex"
+uid="uid://b6xbjyirnr38e"
+path="res://.godot/imported/logo_red_trans_clicked.png-f107df2602776828dc08babf8fc07666.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/components/discord_link/Logo red trans.png"
-dest_files=["res://.godot/imported/Logo red trans.png-3370e2c88ae05d76923ffdc9997c4d86.ctex"]
+source_file="res://assets/components/discord_link/logo_red_trans_clicked.png"
+dest_files=["res://.godot/imported/logo_red_trans_clicked.png-f107df2602776828dc08babf8fc07666.ctex"]
 
 [params]
 
