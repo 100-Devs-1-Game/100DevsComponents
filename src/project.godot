@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="100 Devs Components"
+run/main_scene="uid://bnm7a5flxr7my"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
