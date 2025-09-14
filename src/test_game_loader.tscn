@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://ib35deyav04b"]
+
+[ext_resource type="Script" uid="uid://djtmfnytccq27" path="res://test_game_loader.gd" id="1_n12a1"]
+[ext_resource type="PackedScene" uid="uid://bnm7a5flxr7my" path="res://test_scene.tscn" id="2_4u3og"]
+[ext_resource type="PackedScene" uid="uid://dmhvblnd0l1wr" path="res://components/splash_screen/splash_stamp.tscn" id="2_w2laj"]
+
+[node name="TestGameLoader" type="Node2D"]
+script = ExtResource("1_n12a1")
+main_scene = ExtResource("2_4u3og")
+
+[node name="Splash_Screen" parent="." instance=ExtResource("2_w2laj")]
+
+[connection signal="finished" from="Splash_Screen" to="." method="_on_splash_screen_finished"]
