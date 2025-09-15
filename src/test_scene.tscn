@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnm7a5flxr7my"]
+
+[ext_resource type="PackedScene" uid="uid://c3cx280f4i76s" path="res://components/discord_link/discord_button.tscn" id="1_ia1lp"]
+[ext_resource type="Script" uid="uid://3ohgcwwc46mp" path="res://components/credits_parser/credits_parser.gd" id="2_sasra"]
+
+[node name="TestScene" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DiscordButton" parent="CanvasLayer" instance=ExtResource("1_ia1lp")]
+offset_right = 256.0
+offset_bottom = 256.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/CenterContainer"]
+layout_mode = 2
+
+[node name="Credits" type="RichTextLabel" parent="CanvasLayer/CenterContainer/PanelContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+fit_content = true
+horizontal_alignment = 1
+script = ExtResource("2_sasra")
+credits_path = "res://components/credits_parser/test.txt"
+component_credits = Array[String](["res://components/credits_parser/component_credits.txt", "res://components/discord_link/component_credits.txt"])

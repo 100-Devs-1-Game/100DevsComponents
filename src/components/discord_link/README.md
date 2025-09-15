@@ -4,8 +4,4 @@ Opens the Discord Server invite when clicked
 
 # Assets
 
-`assets/discord_link/`
-
-# Credits
-
-Hannah Sekerka
+`assets/components/discord_link/`
